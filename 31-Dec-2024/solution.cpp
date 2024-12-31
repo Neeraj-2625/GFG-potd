@@ -1,4 +1,9 @@
-unordered_set<int> numSet(nums.begin(), nums.end());
+class Solution {
+  public:
+
+    // Function to return length of longest subsequence of consecutive integers.
+    int longestConsecutive(vector<int>& nums) {
+        unordered_set<int> numSet(nums.begin(), nums.end());
         int longest = 0;
 
         for (int num : numSet) {
@@ -9,3 +14,5 @@ unordered_set<int> numSet(nums.begin(), nums.end());
             }
         }
         return longest;
+    }
+};
